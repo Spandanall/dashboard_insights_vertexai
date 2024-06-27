@@ -1,7 +1,7 @@
 application: dashboard-summarization {
   label: "Dashboard Insights-sp"
-  # file: "bundle.js"
-  url: "http://localhost:8080/bundle.js"
+  file: "bundle.js"
+  # url: "http://localhost:8080/bundle.js"
   mount_points: {
     dashboard_vis: yes
     dashboard_tile: yes
