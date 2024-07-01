@@ -1,6 +1,8 @@
+
+project_name: "dashboard-summarization"
+
 application: dashboard-summarization {
   label: "Dashboard Insights-sp"
-  file: "bundle.js"
   # url: "http://localhost:8080/bundle.js"
   mount_points: {
     dashboard_vis: yes
@@ -10,7 +12,7 @@ application: dashboard-summarization {
   entitlements: {
     local_storage: yes
     use_form_submit: yes
-    core_api_methods: ["run_inline_query","all_lookml_models","dashboard","dashboard_dashboard_elements"]
+    core_api_methods: ["me","run_inline_query","all_lookml_models","dashboard","dashboard_dashboard_elements"]
     external_api_urls: [
       "https://websocketserviceimage-bfxm7yohxa-uc.a.run.app","http://localhost:5000","http://localhost:3000","https://*.googleapis.com","https://slack.com/api/*","https://slack.com/*"
     ]
@@ -26,5 +28,7 @@ application: dashboard-summarization {
       "https://www.googleapis.com/auth/chat.messages.create",
       "https://slack.com/oauth/v2/authorize"
     ]
+    scoped_user_attributes: []
+    global_user_attributes: []
   }
 }
