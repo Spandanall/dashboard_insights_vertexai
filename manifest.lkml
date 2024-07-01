@@ -2,7 +2,7 @@
 project_name: "dashboard-summarization"
 
 application: dashboard-summarization {
-  label: "Dashboard Insights-sp"
+  label: "Dashboard insights-sp"
   # url: "http://localhost:8080/bundle.js"
   mount_points: {
     dashboard_vis: yes
